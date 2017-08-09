@@ -23,7 +23,7 @@ public class HttpGlideUrlLoader implements ModelLoader<GlideUrl, InputStream> {
    * <p>Defaults to 2500ms.
    */
   public static final Option<Integer> TIMEOUT = Option.memory(
-      "com.bumptech.glide.load.model.stream.HttpGlideUrlLoader.Timeout", 2500);
+      "com.bumptech.glide.load.model.stream.HttpGlideUrlLoader.Timeout", 20000);
 
   @Nullable private final ModelCache<GlideUrl, GlideUrl> modelCache;
 
